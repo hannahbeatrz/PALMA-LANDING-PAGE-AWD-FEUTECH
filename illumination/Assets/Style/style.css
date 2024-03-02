@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #80c0eb, #ce8de7);
+    position: relative;
+    cursor: none;
+
+    .word {
+        color: whitesmoke;
+        font-size: 10rem;
+        cursor: none;
+    }
+
+}
+
+.illumination {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        circle at var(--x) var(--y),
+        transparent -10%,
+        rgb(7, 7, 7) 25%);
+}
